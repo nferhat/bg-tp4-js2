@@ -1,0 +1,34 @@
+function doInsertRowTable(num, nom, prenom, points) {
+    const table = document.getElementById('tableau')
+    let row = document.createElement('tr')
+    row.setAttribute('class', 'row');
+
+    let col1 = document.createElement('td');
+    col1.setAttribute('class', 'col_number')
+    col1.innerText = num;
+    row.appendChild(col1)
+
+    let col2 = document.createElement('td');
+    col2.setAttribute('class', 'col_text');
+    col2.innerText = nom;
+    row.appendChild(col2)
+
+    let col3 = document.createElement('td');
+    col3.setAttribute('class', 'col_text');
+    col3.innerText = prenom;
+    row.appendChild(col3)
+
+    let col4 = document.createElement('td');
+    col4.setAttribute('class', 'col_number');
+    col4.innerText = points;
+    row.appendChild(col4)
+
+    let col5 = document.createElement('td');
+    col5.setAttribute('class', 'col_chkbox');
+    let chkbox = document.createElement('input');
+    chkbox.setAttribute('type', 'checkbox');
+    col5.appendChild(chkbox);
+    row.appendChild(col5)
+
+    table.appendChild(row);
+}
