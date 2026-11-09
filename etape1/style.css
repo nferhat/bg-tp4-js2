@@ -1,0 +1,16 @@
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+thead {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+tr, td {
+    border: 2px solid grey;
+    padding: 10px;
+}
