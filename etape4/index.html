@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div id=table_container>
+        <table id="tableau">
+            <thead>
+                <td class="col_number">N</td>
+                <td class="col_text">Nom</td>
+                <td class="col_text">Prénom</td>
+                <td class="col_number">Points</td>
+                <td class="col_chkbox">Select</td>
+            </thead>
+        </table>
+        <div class="container_summary">
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
+        <script src="script.js"></script>
+        <button onclick="doInsertRowTable(99 , 'nom' , 'prenom' , 10)">ajouter</button>
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+
+
+</body>
+
+</html>

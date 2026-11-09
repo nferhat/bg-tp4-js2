@@ -1,3 +1,5 @@
+
+
 function doInsertRowTable(num, nom, prenom, points) {
     const table = document.getElementById('tableau')
     let row = document.createElement('tr')
